@@ -1,0 +1,47 @@
+/* Container for the animated shape */
+.animated-shape-container {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+
+/* Styling the animated shape */
+.animated-shape {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #ff6b6b, #f06595, #845ef7);
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 107, 107, 0.8);
+    animation: rotate-scale-glow 6s ease-in-out infinite, color-change 10s ease-in-out infinite;
+}
+
+/* Rotation, Scaling, and Glowing effect */
+@keyframes rotate-scale-glow {
+    0%, 100% {
+        transform: rotate(0deg) scale(1);
+        box-shadow: 0 0 20px rgba(255, 107, 107, 0.8);
+    }
+    25% {
+        transform: rotate(45deg) scale(1.1);
+        box-shadow: 0 0 40px rgba(240, 101, 149, 0.9);
+    }
+    50% {
+        transform: rotate(90deg) scale(1.2);
+        box-shadow: 0 0 60px rgba(132, 94, 247, 1);
+    }
+    75% {
+        transform: rotate(135deg) scale(1.1);
+        box-shadow: 0 0 40px rgba(240, 101, 149, 0.9);
+    }
+}
+
+/* Color change effect for gradient */
+@keyframes color-change {
+    0%, 100% {
+        background: linear-gradient(135deg, #ff6b6b, #f06595, #845ef7);
+    }
+    50% {
+        background: linear-gradient(135deg, #845ef7, #f06595, #ff6b6b);
+    }
+}
