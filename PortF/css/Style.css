@@ -212,6 +212,7 @@
     display: grid;
     place-content: center;
     border-radius: 5px;
+    padding: 20px;
     overflow: hidden;
     cursor: pointer;
   
@@ -219,10 +220,13 @@
   
   .project__card img {
     transition: scale 0.3s;
+    
   }
   
   .project__card:hover img {
     scale: 1.1;
+    max-width: 350px;
+
   }
   
   
