@@ -62,19 +62,20 @@
 .container .box:nth-child(1):before,
 .container .box:nth-child(1):after
 {
-  background: linear-gradient(315deg, #eb4d4d, #b8406a)
+  background: linear-gradient(315deg, #474448,#a54657
+  )
 }
 
 .container .box:nth-child(2):before,
 .container .box:nth-child(2):after
 {
-  background: linear-gradient(315deg, #cdb4ee, #d80750)
+  background: linear-gradient(315deg, #F1F0EA, #2D232E)
 }
 
 .container .box:nth-child(3):before,
 .container .box:nth-child(3):after
 {
-  background: linear-gradient(315deg, #f703ff, #470c0c)
+  background: linear-gradient(315deg,  #474448, #2d0320)
 }
 
 .container .box span
@@ -204,7 +205,7 @@
 
 .container .box .content a:hover
 {
-  background: #ec0767;
+  background: #a54657;
   border: 1px solid rgba(245, 242, 243, 0.4);
   box-shadow: 0 1px 15px rgba(233, 58, 101, 0.2);
   color: white;

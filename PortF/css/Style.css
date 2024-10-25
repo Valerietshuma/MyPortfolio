@@ -1,19 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
-    --primary-color: #000000;
-    --secondary-color: #d6046d;
+    --primary-color: #F1F0EA;
+    --secondary-color: #a28b8e;
     --secondary-color-dark: #9c058d;
-    --text-dark: #b18399;
-    --text-light: #a81b5d;
+    --text-dark: #423741;
+    --text-light: #a54657;
     --white: #0c0005;
     --max-width: 1200px;
+
+    --text: #F1F0EA;
+    --background: #ccbcbc;
+
+
+--primary: #2d0320;
+--secondary: #474448;
+--accent: #d1c6ad;
+
   }
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
   }
+  
   
   .section__container {
     max-width: var(--max-width);
@@ -54,13 +65,13 @@
     border: none;
     border-radius: 5px;
     color: var(--white);
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     cursor: pointer;
     transition: 0.3s;
   }
   
   .btn:hover {
-    background-color: var(--secondary-color-dark);
+    background-color: var(--text-light);
   }
   
   a {
@@ -71,6 +82,7 @@
   body {
     color: var(--white);
     font-family: "Poppins", sans-serif;
+    background-color: var(--background);
   }
   
   nav {
@@ -111,6 +123,7 @@
     color: var(--text-light);
     max-width: 400px;
     margin: 1rem 0;
+    font-weight: bold;
   }
   .header__container p span {
     color: var(--white);
@@ -133,11 +146,14 @@
   
   
 
-  
+  .Skills{
+    background-color: var(--secondary);
+  }
   
   .about,
+
   .project {
-    background-color: var(--text-dark);
+    background-color: var(--text);
   }
   
   .about__container {
@@ -163,11 +179,12 @@
     padding: 2rem 0;
     color: var(--text-light);
     text-align: center;
+    font-weight: bold;
   }
   
   .service,
   footer {
-    background-color: var(--primary-color);
+    background-color: var(--accent);
   }
   
   .service__grid,
@@ -272,7 +289,7 @@
   }
   
   .social__icons .icon:hover {
-    background-color: var(--secondary-color-dark);
+    background-color: var(--text-light);
   }
   
   .footer__form {
@@ -286,7 +303,7 @@
     outline: none;
     border: none;
     border-radius: 5px;
-    color: var(--white);
+    color: var(--primary);
   }
   
   .footer__form textarea {
