@@ -160,7 +160,7 @@
   font-style: normal;
   font-weight: bold;
   line-height: 1.5em;
-  color: var(--accent)
+  color: var(--text-light)
 }
 .direction-r .desc {
   margin: 1em 0 0 0.75em;
