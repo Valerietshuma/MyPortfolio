@@ -1,18 +1,18 @@
 .nav {
-    background-color: #444; /* Different background color */
-    height: 96px; /* Adjust height */
+    background-color: #444; 
+    height: 96px; 
     position: fixed;
     line-height: 65px;
     text-align: center;
-    z-index: 1000; /* Keep it on top */
-    display: flex; /* Use flexbox for layout */
+    z-index: 1000; 
+    display: flex; 
     align-items: center; 
     padding: 0 3rem; 
     border-radius: 15px;
 }
 
 .nav div.logo a {
-    flex: 1; /* Different logo color */
+    flex: 1; 
 }
 
 .nav div.logo a {
@@ -26,11 +26,11 @@
 }
 
 .nav div.main_list {
-    display: flex; /* Make sure the main list is displayed as flex */
+    display: flex; 
 }
 
 .nav div.main_list ul {
-    width: auto; /* Auto width to prevent overflow */
+    width: auto; 
     display: flex;
     list-style: none;
     margin: 0;
@@ -38,15 +38,15 @@
 }
 
 .nav div.main_list ul li {
-    padding: 0 1.5rem; /* Add horizontal padding for spacing */
+    padding: 0 1.5rem; 
 }
 
 .nav div.main_list ul li a {
     text-decoration: none;
     color: #d40c7a;
-    line-height: 65px; /* Align text vertically */
+    line-height: 65px; 
     font-size: 1.4rem;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .nav div.main_list ul li a:hover {
@@ -54,41 +54,41 @@
 }
 
 .nav.hidden {
-    transform: translateY(-100%); /* Hide the nav by moving it up */
+    transform: translateY(-100%);
 }
 
 .hamburger {
-    display: none; /* Hidden by default */
+    display: none; 
     cursor: pointer;
-    font-size: 2rem; /* Adjust size */
-    color: #fff; /* Color for the icon */
-    padding: 10px; /* Adjust padding for click area */
+    font-size: 2rem; 
+    color: #fff;
+    padding: 10px; 
 }
 @media (max-width: 600px) {
     .hamburger {
-        display: block; /* Show hamburger on mobile */
+        display: block; 
     }
 
     .nav div.main_list {
-        display: none; /* Hide menu by default */
-        flex-direction: column; /* Stack items vertically */
-        width: 100%; /* Full width */
-        background-color: #2d0320; /* Match navbar */
+        display: none; 
+        flex-direction: column; 
+        width: 100%; 
+        background-color: #2d0320; 
     }
 
     .nav div.main_list.show_list {
-        display: flex; /* Show menu when active */
+        display: flex; 
     }
 
     .nav div.main_list ul {
-        flex-direction: column; /* Stack menu items */
-        align-items: center; /* Center items */
-        padding: 0; /* Remove padding */
+        flex-direction: column; 
+        align-items: center; 
+        padding: 0; 
     }
 
     .nav div.main_list ul li {
-        width: 100%; /* Allow items to take full width */
-        text-align: center; /* Center text */
-        padding: 10px 0; /* Add vertical padding */
+        width: 100%; 
+        text-align: center; 
+        padding: 10px 0;
     }
 }
