@@ -4,13 +4,15 @@
     position: fixed;
     line-height: 65px;
     text-align: center;
+    background-color: #2d0320; 
+    z-index: 1000; /* Keep it on top */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    padding: 0 3rem; /* Add some padding on left and right */
 }
 
 .nav div.logo {
-    float: left;
-    width: auto;
-    height: auto;
-    padding-left: 3rem;
+    flex: 1; /* Allow logo to take available space */
 }
 
 .nav div.logo a {
@@ -20,17 +22,15 @@
 }
 
 .nav div.logo a:hover {
-    color: #1f1627;
+    color: #d40c7a;
 }
 
 .nav div.main_list {
-    height: 65px;
-    float: right;
+    display: flex; /* Make sure the main list is displayed as flex */
 }
 
 .nav div.main_list ul {
-    width: 100%;
-    height: 65px;
+    width: auto; /* Auto width to prevent overflow */
     display: flex;
     list-style: none;
     margin: 0;
@@ -38,19 +38,57 @@
 }
 
 .nav div.main_list ul li {
-    width: auto;
-    height: 65px;
-    padding: 0;
-    padding-right: 3rem;
+    padding: 0 1.5rem; /* Add horizontal padding for spacing */
 }
 
 .nav div.main_list ul li a {
     text-decoration: none;
     color: #d40c7a;
-    line-height: 65px;
+    line-height: 65px; /* Align text vertically */
     font-size: 1.4rem;
 }
 
 .nav div.main_list ul li a:hover {
-    color: #020e08;
+    color: white;
+}
+
+.nav.hidden {
+    transform: translateY(-100%); /* Hide the nav by moving it up */
+}
+
+.hamburger {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    font-size: 2rem; /* Adjust size */
+    color: #fff; /* Color for the icon */
+    padding: 10px; /* Adjust padding for click area */
+}
+
+@media (max-width: 600px) {
+    .hamburger {
+        display: block; /* Show hamburger on mobile */
+    }
+
+    .nav div.main_list {
+        display: none; /* Hide menu by default */
+        flex-direction: column; /* Stack items vertically */
+        width: 100%; /* Full width */
+        background-color: #2d0320; /* Match navbar */
+    }
+
+    .nav div.main_list.show_list {
+        display: flex; /* Show menu when active */
+    }
+
+    .nav div.main_list ul {
+        flex-direction: column; /* Stack menu items */
+        align-items: center; /* Center items */
+        padding: 0; /* Remove padding */
+    }
+
+    .nav div.main_list ul li {
+        width: 100%; /* Allow items to take full width */
+        text-align: center; /* Center text */
+        padding: 10px 0; /* Add vertical padding */
+    }
 }

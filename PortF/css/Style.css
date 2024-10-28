@@ -25,7 +25,25 @@
     
   }
   
-  
+  .animated-shape-container {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+
+    @media screen and (max-width: 1500px) {
+        scale: 0.8;
+    }
+    @media screen and (max-width: 1074px) {
+      scale: 0.7;
+  }@media screen and (max-width: 1020px) {
+      scale: 0.6;
+  }@media screen and (max-width: 1074px) {
+    scale: 0.5;
+}@media screen and (max-width: 922px) {
+  visibility: hidden;
+}
+}
   .section__container {
     max-width: var(--max-width);
     margin: auto;
@@ -34,7 +52,7 @@
   }
   .image{
     @media screen and (max-width: 1500px) {
-  visibility: hidden;
+  
     }
   }
   .section__title {
