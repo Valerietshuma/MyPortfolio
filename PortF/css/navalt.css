@@ -1,7 +1,7 @@
 .nav {
     background-color: #444; 
-    height: 96px; 
-    position: fixed;
+    height: 5px; 
+    position: relative;
     line-height: 65px;
     text-align: center;
     z-index: 1000; 
@@ -10,7 +10,9 @@
     padding: 0 3rem; 
     border-radius: 15px;
 }
-
+.container{
+    padding-top: 96px;
+}
 .nav div.logo a {
     flex: 1; 
 }
