@@ -113,7 +113,8 @@
     left: 50%;
     transform: translateX(-50%);
     max-width: var(--max-width);
-    padding: 1rem;
+    padding:1rem;
+    
   }
   
   nav .nav__logo a {
@@ -127,10 +128,11 @@
   
   header {
     height: 100vh;
-    background-image: url("");
+    background-image: url("../images/myportf.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    
   }
   
   .header__container {
@@ -139,9 +141,10 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+   
   }
   .header__container p {
-    color: var(--text-light);
+    color: black ;
     max-width: 400px;
     margin: 1rem 0;
     font-weight: bold;
