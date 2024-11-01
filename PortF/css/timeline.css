@@ -62,7 +62,7 @@
 .flag {
   position: relative;
   display: inline;
-  background: rgb(194, 4, 109);
+  background: #a28b8e;
   padding: 6px 10px;
   border-radius: 5px;
   
@@ -157,10 +157,11 @@
   margin: 1em 0.75em 0 0;
   
   font-size: 0.77777em;
-  font-style: italic;
+  font-style: normal;
+  font-weight: bold;
   line-height: 1.5em;
+  color: var(--text-light)
 }
-
 .direction-r .desc {
   margin: 1em 0 0 0.75em;
 }
@@ -251,6 +252,7 @@
 	box-shadow: 0 0 1px rgba(0,0,0,0.20);
 	
   z-index: 15;
+  
 }
 
 .direction-l .desc,

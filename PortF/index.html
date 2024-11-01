@@ -8,10 +8,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="css/Style.css" />
   <link rel="stylesheet" href="css/ball.css">
-  <link rel="stylesheet" href="css/nav.css">
+ <link rel="stylesheet" href="css/nav.css">
+ <script src="css/nav.js"></script>
   <link rel="stylesheet" href="css/timeline.css">
   <link rel="stylesheet" href="css/projects.css">
   <link rel="stylesheet" href="css/skills.css">
+  
+
+  
+
+
+  <script>(function(){var pp=document.createElement('script'), ppr=document.getElementsByTagName('script')[0]; stid='aWZnSklkMWxpYTluWlZRRStFWmNqdz09';pp.type='text/javascript'; pp.async=true; pp.src=('https:' == document.location.protocol ? 'https://' : 'http://') + 's01.live2support.com/dashboardv2/chatwindow/'; ppr.parentNode.insertBefore(pp, ppr);})();</script>
 
   <title>My Portfolio</title>
 
@@ -19,27 +26,29 @@
 </head>
 
 <body>
-  <nav>
-    <div class="nav__logo"><a href="#">GE<span>E</span>K.</a></div>
-  </nav>
+  
+  
+  <nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <div class="nav__logo"><a href="#">GE<span>E</span>K.</a></div>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776; <!-- Hamburger icon -->
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-  <ul class="menu cf">
-    <li><a href="">home</a></li>
-    <li><a href="#about">About Me</a></li>
-    <li><a href="#Skills">Skills</a></li>
 
-    <li>
-      <a href="">Projects</a>
-      <ul class="submenu">
-        <li><a href="archive.html">ArchiveCol</a></li>
-        <li><a href="makhad.html"></a>Makhado-Web-Ap</li>
-        <li><a href="disaster.html"></a>Disaster-System</li>
-        <li><a href="https://www.blogger.com/blogger.g?blogID=1719501309664700552"></a>Birdwa</li>
-      </ul>
-    </li>
-    <li><a href="#footer">Contact </a></li>
-
-  </ul>
 
   <header>
     <div class="section__container header__container">
@@ -58,11 +67,7 @@
         <button class="btn">
           <a href="#footer">Say Hello</a></button>
       </div>
-      <div class="animated-shape-container">
-        <img class="image" src="images/coverpage.svg" style="border-radius:14%;" />
-
-      </div>
-
+    
   </header>
   <section id="about" class="about">
     <div class="section__container about__container">
@@ -202,7 +207,7 @@
 
   </section>
 
-  <section class="project">
+  <section id="projects" class="project">
     <div class="section__container project__container">
 
       <h2 class="section__title"><span>My Latest</span> Projects</h2>
@@ -221,7 +226,7 @@
           <div class="content">
             <h2>Makhado</h2>
             <p>Makhado is a Web-App designed for a local pannel beating store.</p>
-            <a href="makhad.html" class="read__more">Read more...</a>
+            <a href="archive.html" class="read__more">Read more...</a>
           </div>
         </div>
         <div class="box">
@@ -229,7 +234,7 @@
           <div class="content">
             <h2>Disaster-System</h2>
             <p>It is a system developed to manage and report active disasters </p>
-            <a href="disaster.html" class="read__more">Read more...</a>
+            <a href="archive.html" class="read__more">Read more...</a>
           </div>
         </div>
       </div>
@@ -268,10 +273,8 @@
         <button type="submit" class="btn">Send Message</button>
         <p id="successMessage" style="display:none;"> Your idea/Inquiry has been sent successfully</p>
       </form>
-
-
       <div class="footer-bottom">
-        <p style="text-align: center; color:rgb(245, 236, 245);">&copy;2024 Valerie Tshuma, All rights Reserved.</p>
+        <p style="text-align: center; color:#a54657;">&copy;2024 Valerie Tshuma, All rights Reserved.</p>
       </div>
     </div>
   </footer>
